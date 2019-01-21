@@ -7,7 +7,7 @@ import com.umeng.analytics.MobclickAgent;
 /**
  * BaseActivity
  *
- * @author 沈建林
+ * @author 林zero
  * @date 2019/1/21
  */
 public class BaseActivity extends AppCompatActivity {
