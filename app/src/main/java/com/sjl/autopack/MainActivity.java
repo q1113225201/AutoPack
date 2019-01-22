@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.sjl.autopack.base.BaseActivity;
+import com.tinkerpatch.sdk.TinkerPatch;
 
 public class MainActivity extends BaseActivity {
 
@@ -22,6 +23,7 @@ public class MainActivity extends BaseActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 100);
         }
+        TinkerPatch.with().fetchPatchUpdate(true);
     }
 
     private int cnt = 0;

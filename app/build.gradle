@@ -35,6 +35,10 @@ android {
             minifyEnabled false
         }
     }
+    dexOptions {//dex配置
+        //推荐
+        jumboMode = true
+    }
 }
 
 dependencies {
